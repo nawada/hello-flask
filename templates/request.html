@@ -1,0 +1,12 @@
+<!doctype html>
+<title>hello from Flask</title>
+{% if value %}
+    <p>{{ value }}!</p>
+{% else %}
+    <p>Requested value will be HERE</p>
+{% endif %}
+
+<form action="/request/post" method="post">
+    <input type="text" name="value" id="value" required>
+    <button type="submit">Submit</button>
+</form>
